@@ -1,0 +1,21 @@
+.logical-table {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+
+}
+
+.logical-table th {
+  padding: 10px 20px;
+  border: 1px solid;
+}
+
+.logical-table td {
+  padding: 10px 20px;
+  border: 1px solid;
+}
+
+tbody {
+  border: 2px solid;
+  border-radius: 2px;
+}
