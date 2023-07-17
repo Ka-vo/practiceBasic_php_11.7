@@ -117,8 +117,8 @@
       ?>
       <tr>
         <th> </th>
-        <th><?= var_export($true); ?></th>
-        <th><?= var_export($false); ?></th>
+        <th><? var_export($true); ?></th>
+        <th><? var_export($false); ?></th>
         <th><?= '1'; ?></th>
         <th><?= '0'; ?></th>
         <th><?= '-1'; ?></th>
@@ -129,7 +129,7 @@
       <tr>
         <td>
           <?php $stringOne = true;
-          echo var_export($stringOne); ?>
+          var_export($stringOne); ?>
         </td>
         <td><?= (int)($stringOne == $true); ?></td>
         <td><?= (int)($stringOne == $false); ?></td>
@@ -143,7 +143,7 @@
       <tr>
         <td>
           <?php $stringTwo = false;
-          echo var_export($stringTwo); ?>
+          var_export($stringTwo); ?>
         </td>
         <td><?= (int)($stringTwo == $true); ?></td>
         <td><?= (int)($stringTwo == $false); ?></td>
@@ -199,7 +199,7 @@
       <tr>
         <td>
           <?php $stringSix = '1';
-          echo var_export($stringSix); ?>
+          var_export($stringSix); ?>
         </td>
         <td><?= (int)($stringSix == $true); ?></td>
         <td><?= (int)($stringSix == $false); ?></td>
@@ -213,7 +213,7 @@
       <tr>
         <td>
           <?php $stringSeven = null;
-          echo var_export($stringSeven); ?>
+          var_export($stringSeven); ?>
         </td>
         <td><?= (int)($stringSeven == $true); ?></td>
         <td><?= (int)($stringSeven == $false); ?></td>
@@ -227,7 +227,7 @@
       <tr>
         <td>
           <?php $stringEight = 'php';
-          echo var_export($stringEight); ?>
+          var_export($stringEight); ?>
         </td>
         <td><?= (int)($stringEight == $true); ?></td>
         <td><?= (int)($stringEight == $false); ?></td>
@@ -243,8 +243,8 @@
     <table class="logical-table">
       <tr>
         <th> </th>
-        <th><?= var_export($true); ?></th>
-        <th><?= var_export($false); ?></th>
+        <th><? var_export($true); ?></th>
+        <th><? var_export($false); ?></th>
         <th><?= '1'; ?></th>
         <th><?= '0'; ?></th>
         <th><?= '-1'; ?></th>
@@ -255,7 +255,7 @@
       <tr>
         <td>
           <?php $stringOne = true;
-          echo var_export($stringOne); ?>
+          var_export($stringOne); ?>
         </td>
         <td><?= (int)($stringOne === $true); ?></td>
         <td><?= (int)($stringOne === $false); ?></td>
@@ -269,7 +269,7 @@
       <tr>
         <td>
           <?php $stringTwo = false;
-          echo var_export($stringTwo); ?>
+          var_export($stringTwo); ?>
         </td>
         <td><?= (int)($stringTwo === $true); ?></td>
         <td><?= (int)($stringTwo === $false); ?></td>
@@ -325,7 +325,7 @@
       <tr>
         <td>
           <?php $stringSix = '1';
-          echo var_export($stringSix); ?>
+          var_export($stringSix); ?>
         </td>
         <td><?= (int)($stringSix === $true); ?></td>
         <td><?= (int)($stringSix === $false); ?></td>
@@ -339,7 +339,7 @@
       <tr>
         <td>
           <?php $stringSeven = null;
-          echo var_export($stringSeven); ?>
+          var_export($stringSeven); ?>
         </td>
         <td><?= (int)($stringSeven === $true); ?></td>
         <td><?= (int)($stringSeven === $false); ?></td>
@@ -353,7 +353,7 @@
       <tr>
         <td>
           <?php $stringEight = 'php';
-          echo var_export($stringEight); ?>
+          var_export($stringEight); ?>
         </td>
         <td><?= (int)($stringEight === $true); ?></td>
         <td><?= (int)($stringEight === $false); ?></td>
@@ -365,6 +365,12 @@
         <td><?= (int)($stringEight === $php); ?></td>
       </tr>
     </table>
+
+    <div class="end">
+      <h1 class="output-title"><strong>Вывод:</strong></h1>
+      <p class="output">При не жестком сравнении операнды приводятся к одному типу, после чего сравниваются.
+        При жестком сравнении результат сравнения будет только в том случае, если операнды одного типа.</p>
+    </div>
   </div>
 </body>
 
